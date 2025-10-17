@@ -10,6 +10,7 @@ Document clear coding guidelines for the TODO app to ensure code consistency, qu
 1. Open the **Copilot** chat panel and switch to **Agent** mode using the dropdown menu.
 2. Instruct Copilot to create a new file at `docs/coding-guidelines.md` with a narrative summary of the project's coding style and quality principles. For example cover general formatting rules, import organization, linter usage and best practices like the DRY principle.
 3. Ask Copilot to update `copilot-instructions.md` to reference the new `coding-guidelines.md` file.
+4. Commit and push your changes.
 
 
 #### Success Criteria

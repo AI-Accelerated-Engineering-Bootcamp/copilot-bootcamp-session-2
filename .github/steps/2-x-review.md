@@ -13,6 +13,8 @@ Here's a recap of your accomplishments:
 - Documented testing guidelines covering unit, integration, and end-to-end tests
 - Summarized coding style and code quality principles for maintainable code
 - Used Copilot Agent Mode to build the app using the project context files
+- Refined and validated the test suite with Copilot prompts
+
 
 ### What's next?
 
@@ -22,9 +24,6 @@ Here's a recap of your accomplishments:
   - Use Copilot to add filtering functionality for the items list
   - Add search functionality to the application
 - Explore different AI models with Copilot
-  - Try using GPT-4o for complex architectural decisions
-  - Use Claude models for natural language processing tasks
-  - Experiment with code explanation and documentation generation
 - Apply what you've learned in your own projects
   - Use Copilot Agent Mode to implement new features
   - Accelerate debugging with AI assistance

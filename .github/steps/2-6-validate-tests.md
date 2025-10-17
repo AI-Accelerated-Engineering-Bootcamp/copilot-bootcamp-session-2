@@ -5,7 +5,7 @@ Review all unit, integration, and end-to-end (E2E) tests generated or modified b
 
 ## Instructions
 
-### 1. Review the tests
+#### 1. Review the tests
 Review the new tests added by Copilot and the updates made to the existing ones. Verify that the generated tests cover the new app behaviors as well as error and edge cases and use mocks appropriately. Watch in particular for AI limitations like:
   - False Positive Tests - Tests that always pass regardless of code correctness​
   - Phantom Assertions - Assertions that check non-existent or wrong conditions​
@@ -20,7 +20,7 @@ Some helpful sanity checks:
 - Do E2E tests validate the complete user journey (not just the happy path)?
 - Is the backend state verified (not just UI)? 
 
-### 2. Run the tests
+#### 2. Run the tests
 Run the test suite and verify the results:
 ```
 npm test
@@ -51,11 +51,12 @@ When satisfied by the results, run the entire suite with coverage and verify tha
 npm test -- --coverage
 ```
 
+#### 3. Commit and push the changes
+
 ## Success Criteria
 - All tests pass successfully
 - Meaningful core coverage
 - No fragile/trivial tests
-- E2E covers main TODO lifecycle
 
 
 ## Why?

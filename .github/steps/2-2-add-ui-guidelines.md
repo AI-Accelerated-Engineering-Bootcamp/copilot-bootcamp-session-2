@@ -10,7 +10,7 @@ Create a clear set of UI guidelines to ensure the TODO app has a set of rules ar
 1. Open the **Copilot** chat panel and switch to **Agent** mode using the dropdown menu.
 2. In the Copilot chat input field, ask Copilot to create a new file at `docs/ui-guidelines.md` that describes the core UI guidelines you want for your TODO app. For example, require the use of Material components, specify color palettes and button styles, or accessibility requirements. The exact wording is up to you—just make sure your intent is clear!
 3. Ask Copilot to update `copilot-instructions.md` to reference the new `ui-guidelines.md` file.
-
+4. Commit and push your changes.
 
 #### Success Criteria
 - `docs/ui-guidelines.md` exists and contains the specified guidelines.

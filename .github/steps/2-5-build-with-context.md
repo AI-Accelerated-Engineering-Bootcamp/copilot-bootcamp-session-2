@@ -10,11 +10,14 @@ Leverage all the context and documentation you have created to guide Copilot in 
 1. Open the **Copilot** chat panel and switch to **Agent** mode using the dropdown menu.
 2. In the Copilot chat input field, ask Copilot to use the information and guidelines in `.github/copilot-instructions.md` to expand the TODO app and follow along the proposed plan.
 3. Review the changes Copilot proposes or implements, and ensure they align with the context and standards you have established.
+4. Start the app and observe its behavior. You can run the tests right now, but we will focus on those in more depth in the next step.
+5. When you are satisfied, commit and push your changes.
 
 
 #### Success Criteria
 - Copilot references and follows the context in `.github/copilot-instructions.md` when expanding the app.
 - The new or updated code aligns with the documented standards and practices.
+- Test files are present for the codebase
 
 If you encounter any issues, you can:
 - Ask Copilot to clarify or adjust its approach
