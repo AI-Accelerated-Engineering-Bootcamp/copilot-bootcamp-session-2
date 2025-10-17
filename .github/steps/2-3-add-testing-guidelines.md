@@ -8,7 +8,7 @@ Document clear testing guidelines for the TODO app to ensure code quality and re
 #### :keyboard: Activity: Ask Copilot to create testing guidelines
 
 1. Open the **Copilot** chat panel and switch to **Agent** mode using the dropdown menu.
-2. Instruct Copilot to create a new file at `docs/testing-guidelines.md` with your testing principles, for example: describe the types of tests for the app (unit tests, integration tests, e2e tests...), specify that all new features should include appropriate tests and that the tests should be maintainable.
+2. Instruct Copilot to create a new file at `docs/testing-guidelines.md` with your testing principles, for example: require the app to include unit test, integration and end-to-end tests, specify that all new features should include appropriate tests and that the tests should be maintainable.
 3. Ask Copilot to update `copilot-instructions.md` to reference the new `testing-guidelines.md` file.
 
 #### Success Criteria

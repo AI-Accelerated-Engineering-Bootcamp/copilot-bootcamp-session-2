@@ -1,4 +1,4 @@
-name: Step 2-5 # Build with Context
+name: Step 2-6 # Validate tests
 
 on:
   push:
@@ -45,11 +45,14 @@ jobs:
         
         # START: Check practical exercise
 
-      - name: Check for tests
-        id: check_tests
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run test suite
+        id: run_tests
         continue-on-error: true
         run: |
-          find packages -type f -name '*test.js' | grep -q .
+          npm test
 
       - name: Build message - step results
         id: build-message-step-results
@@ -57,12 +60,12 @@ jobs:
         with:
           template-file: exercise-toolkit/markdown-templates/step-feedback/step-results-table.md
           template-vars: |
-            step_number: 2-5
-            passed: ${ steps.check_tests.outcome == 'success' }
+            step_number: 2-6
+            passed: ${{ steps.run_tests.outcome == 'success' }}
             results_table:
-              - description: "Tests should be present for the code generated."
-                passed: ${{ steps.check_tests.outcome == 'success' }}
-                error_message: "No test files found (e.g., *test.js)."
+              - description: "Test suite should pass (npm test)."
+                passed: ${{ steps.run_tests.outcome == 'success' }}
+                error_message: "Test suite failed. Review failing tests and guidelines."
 
       - name: Create comment - step results
         run: |
@@ -103,20 +106,12 @@ jobs:
       - name: Create comment - add step content
         run: |
           gh issue comment "$ISSUE_URL" \
-            --body-file ".github/steps/2-6-validate-tests.md"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Create comment - watching for progress
-        run: |
-          gh issue comment "$ISSUE_URL" \
-            --body-file exercise-toolkit/markdown-templates/step-feedback/watching-for-progress.md
+            --body-file ".github/steps/2-x-review.md"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Disable current workflow
         run: |
-          gh workflow disable "Step 2-5"
-          gh workflow enable "Step 2-6"
+          gh workflow disable "Step 2-6"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
